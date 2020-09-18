@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<style type="text/css">
+		body{
+			background: rgba(0,0,0,0.9);
+		}
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+			section{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100vw;
+				height: 100vh;
+				flex-wrap: wrap;
+			}
+			.box{
+				width: 18rem;
+				height: 25rem;
+				background-color: black;
+				transition: 0.3s;
+				/*border-radius: 5%;*/
+				margin: 1rem;
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+
+				
+
+			}
+			.box:before{
+				content: '';
+				width: 18rem;
+				height: 25rem;
+				position: absolute;
+				left: -2;
+				right: -2;
+				bottom: -2;
+				top: -2;
+				background: linear-gradient(red,orange);
+				z-index: -11;
+				transform: skew(2deg,2deg);
+
+			}
+			.box:nth-child(2):before{
+				background: linear-gradient(blue,purple);
+			}
+			.box:nth-child(3):before{
+				background: linear-gradient(red,green);
+			}
+			h1{
+				padding: 2rem;
+			}
+			p{
+				margin: 0.8rem;
+			}
+			button{
+				margin: 0.5rem;
+				padding: 0.6rem 0.9rem; 
+				color: white;
+				background: none;
+				outline: none;
+				border: 1px solid white;
+				border-radius: 5%;
+				transition: 0.5s;
+			}
+			button:hover{
+				background: white;
+				color: black;
+			}
+
+			
+			
+
+	</style>
+
+    	<section>
+    		<div class="box">
+    			<h1>Eman Ramzan</h1>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt ut labore et dolore magna aliqua.</p>
+    			<button>Read more</button>
+    		</div>
+    		<div class="box">
+    			<h1>Hassan Mustafa</h1>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt ut labore et dolore magna aliqua.</p>
+    			<button>Read more</button>
+    			
+    		</div><div class="box">
+    			<h1>Esha Arshad</h1>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt ut labore et dolore magna aliqua.</p>
+    			<button>Read more</button>
+    		</div>
+    		
+    		
+    	
+    	</section>
+
+
+
+</body>
+</html>
