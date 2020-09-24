@@ -19,6 +19,7 @@
 
                     *{
                     font-family: 'Noto Sans', sans-serif;
+                    transition: 0.5s;
                       
                       }
                       .navbar-brand{
@@ -53,16 +54,17 @@
                         font-size: 3rem;
                         font-weight: bold;
                       } 
-                      button{
+                      .btn{
                      
                         color: orange;
                         background: none;
                         border: 1px solid orange;
                         padding: 8px 20px;
                         border-radius: 20px;
+                        transition: 0.5s;
 
                       }
-                      button:hover{
+                      .btn:hover{
                         background-color: orange;
                         color: white;
                       }
@@ -74,7 +76,7 @@
                         top: 0;
                         height: 4px;
                         background-color: black;
-                        transform: translate(170px,120px);
+                        transform: translate(160px,170px);
                       }
 
                         
@@ -89,16 +91,16 @@
 
 
 
-             <nav class="navbar navbar-expand-lg navbar-light ">
+             <nav class="navbar navbar-expand-lg col-md-12 col-sm-12 navbar-light ">
               <div class="container">
                       
             <a class="navbar-brand" href="#">Dolctor's</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-            </button>
+            </a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto text-center">
+              <ul class="navbar-nav ml-auto  text-center">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Dashboard <p class="fa fa-chevron-circle-down"></p>  <span class="sr-only">(current)</span></a>
                 </li>
@@ -130,21 +132,21 @@
 
 
           <div class="container">
-                  <div class="row">
-                    <div class="col-lg-6" style="padding: 100px 15px;">
+                  <div class="row"> 
+                    <div class="col-lg-6 col-md-6" style="padding: 150px 15px;">
 
                       <h2 class="font-weight-bold">Welcome</h2>
                       <h1 class="brand">Dolctor's</h1>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                       tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <button>Register</button>
-                      <button>Make new Wesite</button>
+                      <a class="btn">Register</a>
+                      <a class="btn">Make new Wesite</a>
 
-                      
+                       
                       
                     </div>
-                    <div class="col-lg-6">
-                      <img class="img-fluid" src="ve.png">
+                    <div class="col-lg-6 col-md-6">
+                      <img class="img-fluid pt-5" src="ve.png">
                       
                     </div>
                   </div>
