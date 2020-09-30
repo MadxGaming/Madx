@@ -22,6 +22,18 @@
                     transition: 0.5s;
                       
                       }
+                      body{
+                  
+                        /*background: linear-gradient( 45deg , rgba(0,0,0,0.9) , rgba(0,0,0,0.5))  ;*/
+
+                        
+                      }
+                      section{
+                        width: 100vw;
+                        height: 100vh;
+                        margin-bottom: 5rem;
+                        
+                      }
                       .navbar-brand{
                         color: orange !important;
                         font-weight: bold;
@@ -58,14 +70,14 @@
                      
                         color: orange;
                         background: none;
-                        border: 1px solid orange;
+                        border: 1px solid orange !important;
                         padding: 8px 20px;
                         border-radius: 20px;
                         transition: 0.5s;
 
                       }
                       .btn:hover{
-                        background-color: orange;
+                        background-color: orange !important;
                         color: white;
                       }
                       h2::after{
@@ -77,8 +89,38 @@
                         height: 4px;
                         background-color: black;
                         transform: translate(160px,170px);
+                      } 
+                      svg{
+                        /*transform: translateY(-120px);*/
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: -11111;
                       }
 
+                      .sec_section{
+                        
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                      }
+                      
+
+                      
+                      @media (max-width: 767px){
+
+                        svg{
+                          display: none;
+                        }
+                        img{
+                          display: none;
+                        }
+                        
+                        
+
+                      }
                         
 
                       
@@ -90,17 +132,18 @@
 
 
 
-
-             <nav class="navbar navbar-expand-lg col-md-12 col-sm-12 navbar-light ">
+              <section class="container-fluid">
+             <nav class="navbar navbar-expand-lg col-md-12 col-sm-12 navbar-light">
               <div class="container">
+                      
                       
             <a class="navbar-brand" href="#">Dolctor's</a>
             <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto  text-center">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto   text-center ">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Dashboard <p class="fa fa-chevron-circle-down"></p>  <span class="sr-only">(current)</span></a>
                 </li>
@@ -131,9 +174,9 @@
           </nav>
 
 
-          <div class="container">
+          <div class="container ">
                   <div class="row"> 
-                    <div class="col-lg-6 col-md-6" style="padding: 150px 15px;">
+                    <div class="col-lg-6 col-md-6 " style="padding: 150px 15px;">
 
                       <h2 class="font-weight-bold">Welcome</h2>
                       <h1 class="brand">Dolctor's</h1>
@@ -150,7 +193,77 @@
                       
                     </div>
                   </div>
+
                 </div>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="orange" fill-opacity="1" d="M0,128L34.3,106.7C68.6,85,137,43,206,37.3C274.3,32,343,64,411,90.7C480,117,549,139,617,128C685.7,117,754,75,823,69.3C891.4,64,960,96,1029,133.3C1097.1,171,1166,213,1234,192C1302.9,171,1371,85,1406,42.7L1440,0L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+</svg>
+
+              </section>
+
+              <!-- Second Section -->
+
+
+              <div class="sec_section">
+
+
+                <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">Pricing</h1>
+                <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+              </div>
+                        
+                <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Free</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled col-md-12 mt-3 mb-4">
+          <li>10 users included</li>
+          <li>2 GB of storage</li>
+          <li>Email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-warning">Sign up for free</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Pro</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled col-md-12 mt-3 mb-4">
+          <li>20 users included</li>
+          <li>10 GB of storage</li>
+          <li>Priority email</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-warning">Get started</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Enterprise</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled col-md-12 mt-3 mb-4">
+          <li>30 users included</li>
+          <li>15 GB of storage</li>
+          <li>Phone and email</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-warning">Contact us</button>
+      </div>
+    </div>
+  </div>
+
+            </div>
+
 
 
 
